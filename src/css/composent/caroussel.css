@@ -1,56 +1,72 @@
 /* Style de base pour le carrousel */
 #carousel {
     position: relative;
-    width: 80%;
-    max-width: 1000px;
+    width: 30%;
+    /* Réduit la largeur du carrousel à 30% de la taille de la page */
+    max-width: 500px;
+    /* Limite la largeur maximale à 500px */
     margin: 20px auto;
+    /* Centrer le carrousel */
     overflow: hidden;
+    /* Masque les éléments qui sortent du conteneur */
     border-radius: 10px;
-    height: 500px;
-    /* Hauteur du carrousel */
+    height: 200px;
+    /* Hauteur du carrousel plus petite */
+}
+
+.carousel-title {
+    text-align: center;
+    font-size: 1.2em;
+    /* Taille du titre réduite pour s'adapter à la taille du carrousel */
+    margin-bottom: 10px;
 }
 
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    /* Animation lors du changement de slide */
 }
 
 .carousel-slide {
     min-width: 100%;
-    height: 500px;
+    /* Chaque slide occupe toute la largeur du carrousel */
+    height: 100%;
+    /* Hauteur de chaque slide */
     box-sizing: border-box;
-    margin-right: 10px;
+    margin-right: 4px;
     /* Espacement de 4px entre chaque image */
 }
 
 .carousel-slide img {
     width: 100%;
+    /* Remplit le carrousel */
     height: 100%;
+    /* Hauteur ajustée */
     object-fit: cover;
+    /* Coupe l'image pour remplir l'espace sans déformation */
+}
+
+/* Style pour les boutons sous le carrousel */
+.carousel-buttons {
+    text-align: center;
+    /* Centre les boutons */
+    margin-top: 10px;
+    /* Espacement entre le carrousel et les boutons */
 }
 
 .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 15px 25px;
-    /* Augmentation de la taille des boutons */
+    padding: 8px 16px;
+    /* Taille des boutons réduite */
     cursor: pointer;
     border-radius: 50%;
-    font-size: 2em;
-    /* Agrandir la taille des boutons */
+    font-size: 1.2em;
+    /* Taille des icônes des boutons réduite */
     z-index: 10;
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
+    margin: 0 10px;
+    /* Espacement entre les boutons */
 }
 
 .carousel-button:hover {

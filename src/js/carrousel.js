@@ -1,26 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const carouselContainer = document.querySelector('.carousel-container');
-    const slides = document.querySelectorAll('.carousel-slide');
-    const prevButton = document.querySelector('.carousel-button.prev');
-    const nextButton = document.querySelector('.carousel-button.next');
+    const carousels = document.querySelectorAll('.carousel'); // Sélectionner tous les carrousels
 
-    let currentIndex = 0;
+    carousels.forEach(carousel => {
+        const carouselContainer = carousel.querySelector('.carousel-container');
+        const slides = carousel.querySelectorAll('.carousel-slide');
+        const prevButton = carousel.querySelector('.carousel-button.prev');
+        const nextButton = carousel.querySelector('.carousel-button.next');
 
-    // Fonction pour mettre à jour la position du carrousel
-    function updateCarousel() {
-        const offset = -currentIndex * 100; // Calculer le décalage en pourcentage
-        carouselContainer.style.transform = `translateX(${offset}%)`;
-    }
+        let currentIndex = 0;
 
-    // Gestionnaire pour le bouton "Suivant"
-    nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % slides.length; // Passe au slide suivant
-        updateCarousel();
-    });
+        // Fonction pour mettre à jour la position du carrousel
+        function updateCarousel() {
+            const offset = -currentIndex * 100; // Calculer le décalage en pourcentage
+            carouselContainer.style.transform = `translateX(${offset}%)`;
+        }
 
-    // Gestionnaire pour le bouton "Précédent"
-    prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Revient au slide précédent
-        updateCarousel();
+        // Gestionnaire pour le bouton "Suivant"
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length; // Passe au slide suivant
+            updateCarousel();
+        });
+
+        // Gestionnaire pour le bouton "Précédent"
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Revient au slide précédent
+            updateCarousel();
+        });
     });
 });
