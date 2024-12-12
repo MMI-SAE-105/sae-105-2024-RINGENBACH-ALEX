@@ -79,12 +79,14 @@ body {
     color: #fff;
 }
 
+.download-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
 .download-button {
-    display: inline-block;
     background-color: #5db345;
-    /* Couleur verte */
-    color: #fff;
-    /* Texte blanc */
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1em;
@@ -94,5 +96,4 @@ body {
 
 .download-button:hover {
     background-color: #4a9f2e;
-    /* Couleur plus foncée au survol */
 }
