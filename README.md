@@ -3,11 +3,12 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : Ringenbach
+- PRÉNOM : Alex
+- GROUPE : C1
+- URL du site : https://inquisitive-marshmallow-73fb00.netlify.app
+- URL du site Infomaniak : sae-105.alex-ringenbach.fr
+- URL FIGMA : https://www.figma.com/design/0F7mjKGoJjn4qafIUoaPtU/Ringenbach_Alex_MMI1_C1_SAE-103?node-id=137-959&node-type=frame&t=VglIEUcIzArT1tWr-0 
 
 ## Sujet
 
