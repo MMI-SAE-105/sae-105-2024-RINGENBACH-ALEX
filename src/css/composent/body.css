@@ -1,26 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 393px;
+    /* Limite de largeur de la page */
     line-height: 1.6;
-    background-color: #f4f4f4;
-    position: relative;
-    overflow-x: hidden;
 }
 
 #green-strip {
+    background-color: rgba(24, 113, 0, 0.2);
     text-align: center;
-    /* Centre le texte et les éléments */
-    margin: 20px auto;
-    /* Ajoute un espacement autour */
+    padding: 10px;
 }
 
 #green-strip h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    /* Ajoute de l'espace après le titre */
     color: #000;
-    /* Couleur noire */
 }
 
 .text-intro {
@@ -60,54 +54,78 @@ body {
 }
 
 #description {
-    padding: 20px 0;
-    margin-left: 10px;
-    text-align: left;
-    max-width: 600px;
-    line-height: 1.8;
+    padding: 20px;
+    text-align: justify;
     color: #000;
+    line-height: 1.8;
 }
 
 #images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Une colonne sur mobile */
     gap: 20px;
     padding: 20px;
-}
-
-.image-block {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .image-block img {
+        margin-left: -30px;
+        /* Décalage plus prononcé sur les écrans larges */
+    }
+}
+
+.image-block {
+    text-align: left;
+    /* Alignement du texte à gauche */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centre le conteneur global */
+    gap: 10px;
+    /* Espacement entre les éléments */
+    padding: 10px;
+}
+
 .image-block h3 {
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 1.2em;
     color: #000;
 }
 
 .image-block img {
-    width: 337px;
-    height: 176px;
+    margin-left: -20px;
+    /* Décalage de 15px vers la droite */
+    width: 300px;
+    /* Taille des images */
+    height: auto;
+    object-fit: cover;
+    /* Maintient les proportions */
     border-radius: 8px;
-    margin-bottom: 10px;
+    /* Coins arrondis */
 }
 
 .image-block button {
-    background: #fff;
-    border: 2px solid #187100;
-    color: #187100;
-    border-radius: 20px;
+    margin-left: -5px;
+    /* Décalage vers la droite */
+    background-color: #5db345;
+    color: #fff;
     padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    transition: all 0.3s;
-    display: inline-block;
-    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .image-block button:hover {
-    background: #187100;
-    color: #fff;
+    background-color: #4a9f2e;
+    /* Couleur au survol */
+}
+
+.image-block button:hover {
+    background-color: #4a9f2e;
 }
 
 .download-container {

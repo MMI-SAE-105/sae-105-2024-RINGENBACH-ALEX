@@ -1,8 +1,8 @@
 footer {
-    background: #5db345;
-    color: #FFFFFF;
-    text-align: left;
-    padding: 20px 40px;
+    background-color: #5db345;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
 
 footer p {
@@ -14,7 +14,7 @@ footer p {
 .footer-logos {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-top: 10px;
 }
 
