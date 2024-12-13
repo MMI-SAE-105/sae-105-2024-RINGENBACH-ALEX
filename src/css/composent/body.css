@@ -206,6 +206,22 @@ body {
     /* Aligne verticalement le texte */
 }
 
+.green-strip2 {
+    position: relative;
+    /* Nécessaire pour placer le texte dessus */
+    background-color: rgba(24, 113, 0, 0.2);
+    /* Couleur verte avec transparence */
+    width: 500px;
+    /* Largeur exacte de la barre */
+    height: 20px;
+    /* Hauteur exacte de la barre */
+    margin: 20px 0 0 10px;
+    /* Décalage vers la gauche avec margin-left */
+    display: flex;
+    align-items: center;
+    /* Aligne verticalement le texte */
+}
+
 #green-strip h3 {
     position: absolute;
     /* Permet de placer le texte par rapport à la barre */

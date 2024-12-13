@@ -1,0 +1,57 @@
+/* Conteneur principal de la section */
+.image-text-section {
+    display: flex;
+    flex-direction: column;
+    /* Colonne pour les petits écrans */
+    gap: 20px;
+    /* Espacement entre chaque élément */
+    margin: 20px;
+}
+
+/* Conteneur pour chaque élément image + texte */
+.image-text-item {
+    display: flex;
+    align-items: center;
+    /* Aligne l'image et le texte au centre verticalement */
+    gap: 20px;
+    /* Espace entre l'image et le texte */
+    background-color: #f4f4f4;
+    /* Couleur de fond */
+    padding: 15px;
+    border-radius: 10px;
+    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère pour chaque élément */
+}
+
+/* Style de l'image */
+.image {
+    width: 150px;
+    /* Largeur de l'image */
+    height: 150px;
+    /* Hauteur de l'image */
+    object-fit: cover;
+    /* Couvre l'espace sans déformer l'image */
+    border-radius: 8px;
+    /* Arrondir les coins de l'image */
+}
+
+/* Style du texte */
+.text {
+    flex: 1;
+    /* Le texte prend le reste de l'espace disponible */
+}
+
+/* Titre du texte */
+.text h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraphe du texte */
+.text p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
