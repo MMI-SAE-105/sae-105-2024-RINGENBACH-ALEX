@@ -12,13 +12,32 @@
     <script src="/src/js/carrousel.js"></script>
     <header>
         <div class="header-container">
+            <!-- Logo cliquable qui redirige vers la page d'accueil -->
             <a href="index.html">
                 <img src="assets/image/unlogominimalisteavecuniquementunlac.avif" alt="Logo Ciné'Nature"
                     class="logo-image">
             </a>
-            <button class="menu-button">&#9776;</button>
+
+            <!-- Bouton hamburger -->
+            <button class="menu-button" id="menu-toggle">&#9776;</button>
         </div>
+
+        <!-- Menu déroulant -->
+        <nav class="menu" id="menu">
+            <button class="close-button" id="menu-close">&times;</button>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="courts-metrages.html">Courts-métrages</a></li>
+                <li><a href="localisation.html">Localisation</a></li>
+                <li><a href="billetterie.html">Billetterie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <script src="/src/js/menu.js"></script>
+
     <main>
         <div class="background-circle"></div>
         <section id="banner">
@@ -27,12 +46,10 @@
         </section>
         <section id="green-strip">
             <h3>Films à l'affiche</h3>
-            <p class="text-intro">Découvrez les films à l'affiche pour le festival.</p>
+            <br></br>
             <div class="download-container">
-                <a href="assets/image/Programme_Ciné'Nature_2025.pdf" download="Programme_CineNature.pdf"
-                    class="download-button">
-                    Télécharger le programme
-                </a>
+                <h3>Découvrez notre programme complet !</h3> <!-- Sous-titre distinct -->
+                <a href="assets/pdf/programme.pdf" download class="download-button">Télécharger le PDF</a>
             </div>
         </section>
         <section class="carousel">
@@ -48,14 +65,12 @@
                     <img src="assets/image/wayn's world.avif" alt="Image 3">
                 </div>
             </div>
-            <div class="carousel-buttons">
-                <button class="carousel-button prev">❮</button>
-                <button class="carousel-button next">❯</button>
-            </div>
+            <button class="carousel-button prev">❮</button>
+            <button class="carousel-button next">❯</button>
         </section>
 
         <section class="carousel">
-            <h3 class="carousel-title">Film sérieux</h3>
+            <h3 class="carousel-title">Film comique</h3>
             <div class="carousel-container">
                 <div class="carousel-slide">
                     <img src="assets/image/truemanshow.avif" alt="Image 1">
@@ -67,14 +82,12 @@
                     <img src="assets/image/fightclub.avif" alt="Image 3">
                 </div>
             </div>
-            <div class="carousel-buttons">
-                <button class="carousel-button prev">❮</button>
-                <button class="carousel-button next">❯</button>
-            </div>
+            <button class="carousel-button prev">❮</button>
+            <button class="carousel-button next">❯</button>
         </section>
 
         <section class="carousel">
-            <h3 class="carousel-title">Film science fiction/horreur</h3>
+            <h3 class="carousel-title">Film comique</h3>
             <div class="carousel-container">
                 <div class="carousel-slide">
                     <img src="assets/image/ça (it).avif" alt="Image 1">
@@ -86,47 +99,46 @@
                     <img src="assets/image/fnaf1.avif" alt="Image 3">
                 </div>
             </div>
-            <div class="carousel-buttons">
-                <button class="carousel-button prev">❮</button>
-                <button class="carousel-button next">❯</button>
+            <button class="carousel-button prev">❮</button>
+            <button class="carousel-button next">❯</button>
+        </section>
+        <section id="images">
+            <div class="image-block">
+                <h3>Réservation</h3>
+                <img src="assets/image/malsaucy1.avif" alt="Image 1" loading="lazy">
+                <a href="reservation.html">
+                    <button>Plus d'infos</button>
+                </a>
             </div>
-            <section id="images">
-                <div class="image-block">
-                    <h3>Réservation</h3>
-                    <img src="assets/image/malsaucy1.avif" alt="Image 1" loading="lazy">
-                    <a href="reservation.html">
-                        <button>Plus d'infos</button>
-                    </a>
-                </div>
-                <div class="image-block">
-                    <h3>À Propos</h3>
-                    <img src="assets/image/malsaucy3.avif" alt="Image 3" loading="lazy">
-                    <a href="apropos.html">
-                        <button>Plus d'infos</button>
-                    </a>
-                </div>
-                <div class="image-block">
-                    <h3>Invité</h3>
-                    <img src="assets/image/guest.avif" alt="Image 4" loading="lazy">
-                    <a href="invite.html">
-                        <button>Plus d'infos</button>
-                    </a>
-                </div>
-                <div class="image-block">
-                    <h3>Infos pratique</h3>
-                    <img src="assets/image/loupe.avif" alt="Image 5" loading="lazy">
-                    <a href="infopratiques.html">
-                        <button>Plus d'infos</button>
-                    </a>
-                </div>
-                <div class="image-block">
-                    <h3>Contacts</h3>
-                    <img src="assets/image/contacts.avif" alt="Image 6" loading="lazy">
-                    <a href="contacts.html">
-                        <button>Plus d'infos</button>
-                    </a>
-                </div>
-            </section>
+            <div class="image-block">
+                <h3>À Propos</h3>
+                <img src="assets/image/malsaucy3.avif" alt="Image 3" loading="lazy">
+                <a href="apropos.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+            <div class="image-block">
+                <h3>Invité</h3>
+                <img src="assets/image/guest.avif" alt="Image 4" loading="lazy">
+                <a href="invite.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+            <div class="image-block">
+                <h3>Infos pratique</h3>
+                <img src="assets/image/loupe.avif" alt="Image 5" loading="lazy">
+                <a href="infopratiques.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+            <div class="image-block">
+                <h3>Contacts</h3>
+                <img src="assets/image/contacts.avif" alt="Image 6" loading="lazy">
+                <a href="contacts.html">
+                    <button>Plus d'infos</button>
+                </a>
+            </div>
+        </section>
 
     </main>
     <footer>

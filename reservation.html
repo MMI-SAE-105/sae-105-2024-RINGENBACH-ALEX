@@ -11,13 +11,31 @@
 <body>
     <header>
         <div class="header-container">
+            <!-- Logo cliquable qui redirige vers la page d'accueil -->
             <a href="index.html">
                 <img src="assets/image/unlogominimalisteavecuniquementunlac.avif" alt="Logo Ciné'Nature"
                     class="logo-image">
             </a>
-            <button class="menu-button">&#9776;</button>
+
+            <!-- Bouton hamburger -->
+            <button class="menu-button" id="menu-toggle">&#9776;</button>
         </div>
+
+        <!-- Menu déroulant -->
+        <nav class="menu" id="menu">
+            <button class="close-button" id="menu-close">&times;</button>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="courts-metrages.html">Courts-métrages</a></li>
+                <li><a href="localisation.html">Localisation</a></li>
+                <li><a href="billetterie.html">Billetterie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <script src="/src/js/menu.js"></script>
     <main>
         <div class="background-circle"></div>
         <section id="banner">
